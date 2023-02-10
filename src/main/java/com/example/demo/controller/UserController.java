@@ -10,6 +10,7 @@ import java.util.Map;
 @RequestMapping("user")
 @RestController
 public class UserController {
+
     @PostMapping("add")
     public Map<String, String> addUser(JSONObject jsonObject) {
         System.out.println(jsonObject.toJSONString());
