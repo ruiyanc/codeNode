@@ -1,5 +1,7 @@
 package com.example.concurrency;
 
+import com.example.concurrency.example.config.HttpFilter;
+import com.example.concurrency.example.config.HttpInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;

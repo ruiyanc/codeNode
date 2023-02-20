@@ -25,18 +25,19 @@ public class HashTableProblem {
 
         for (int i = 0; i < s.length(); i++) {
             int j = s.charAt(i) - 'a';
-            record[j]++;     // 并不需要记住字符a的ASCII，只要求出一个相对数值就可以了
+            // 并不需要记住字符a的ASCII，只要求出一个相对数值就可以了
+            record[j]++;
         }
-        System.out.println("====");
         for (int i = 0; i < t.length(); i++) {
             record[t.charAt(i) - 'a']--;
         }
-        System.out.println(record);
         for (int count: record) {
-            if (count != 0) {               // record数组如果有的元素不为零0，说明字符串s和t 一定是谁多了字符或者谁少了字符。
+            // record数组如果有的元素不为零0，说明字符串s和t 一定是谁多了字符或者谁少了字符。
+            if (count != 0) {
                 return false;
             }
         }
-        return true;                        // record数组所有元素都为零0，说明字符串s和t是字母异位词
+        // record数组所有元素都为零0，说明字符串s和t是字母异位词
+        return true;
     }
 }

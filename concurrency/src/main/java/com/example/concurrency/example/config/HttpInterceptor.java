@@ -1,9 +1,8 @@
-package com.example.concurrency;
+package com.example.concurrency.example.config;
 
+import com.example.concurrency.example.threadLocal.RequestHolder;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.context.request.WebRequestInterceptor;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-import org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

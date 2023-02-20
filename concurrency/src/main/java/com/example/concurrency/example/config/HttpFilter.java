@@ -1,5 +1,6 @@
-package com.example.concurrency;
+package com.example.concurrency.example.config;
 
+import com.example.concurrency.example.threadLocal.RequestHolder;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.*;
