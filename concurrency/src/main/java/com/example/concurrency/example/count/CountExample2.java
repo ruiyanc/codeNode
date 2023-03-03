@@ -24,9 +24,8 @@ public class CountExample2 {
 
     @SneakyThrows
     public static void main(String[] args) {
-        ExecutorService exec = Executors.newCachedThreadPool();
-//        ThreadPoolExecutor exec = new ThreadPoolExecutor(200, 5000, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>());
-
+//        ExecutorService exec = Executors.newCachedThreadPool();
+        ThreadPoolExecutor exec = new ThreadPoolExecutor(200, 5000, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>());
 //        ExecutorService executor = Executors.newFixedThreadPool(400);
         final Semaphore semaphore = new Semaphore(threadTotal);
         final CountDownLatch countDownLatch = new CountDownLatch(clientTotal);

@@ -2,7 +2,7 @@ package com.example.demo.algorithm;
 
 /**
  * @author xurui
- * @description TODO
+ * @description 排序相关
  * @date 2023/2/9 15:19
  */
 import java.util.Arrays;
@@ -18,15 +18,19 @@ public class Sort {
             System.out.print(" " + arr[i]);
         }
         System.out.println(" ");
-//        bubbleSort(arr);
-//        selectionSort(arr);
-//        insertionSort(arr);
-//        shellSort(arr);
+//        int[] sort = bubbleSort(arr);
+//        int[] sort = selectionSort(arr);
+//        int[] sort = insertionSort(arr);
+//        int[] sort = shellSort(arr);
+//        int[] sort = MergeSort(arr);
         //错误
-        MergeSort(arr);
-//        heapSort(arr);
-//        countingSort(arr);
-//        quickSort(arr, 0, arr.length - 1);
+//        int[] sort = heapSort(arr);
+        //错误
+//        int[] sort = countingSort(arr);
+//        for (int i = 0; i < sort.length; i++) {
+//            System.out.print(" " + sort[i]);
+//        }
+        quickSort(arr, 0, arr.length - 1);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(" " + arr[i]);
         }
@@ -124,7 +128,7 @@ public class Sort {
         return merge(MergeSort(left), MergeSort(right));
     }
 
-    public static int[] merge(int[] left, int[] right) {
+    private static int[] merge(int[] left, int[] right) {
         int[] result = new int[left.length + right.length];
         for (int index = 0, i = 0, j = 0; index < result.length; index++) {
             //  左边数组完毕
@@ -145,6 +149,10 @@ public class Sort {
 
     /**
      * 6.快速排序，随机选取数组中的某个数为基准，从两端开始小的在左边，大的在右边，递归排序
+     *
+     * @param arr 数组
+     * @param start 0
+     * @param end arr.length - 1
      */
     public static void quickSort(int[] arr, int start, int end) {
         int pivot = 0;

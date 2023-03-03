@@ -19,7 +19,7 @@ public class SemaphoneExample3 {
     @SneakyThrows
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool();
-        final Semaphore semaphore = new Semaphore(10);
+        final Semaphore semaphore = new Semaphore(50);
 
         for (int i = 0; i < threadCount; i++) {
             final int threadNum = i;

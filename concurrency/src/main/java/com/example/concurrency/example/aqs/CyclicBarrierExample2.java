@@ -12,7 +12,7 @@ import java.util.concurrent.*;
 @Slf4j
 public class CyclicBarrierExample2 {
 
-    private static CyclicBarrier barrier = new CyclicBarrier(5);
+    private static CyclicBarrier barrier = new CyclicBarrier(10);
 
     public static void main(String[] args) throws Exception {
         ExecutorService exec = Executors.newCachedThreadPool();

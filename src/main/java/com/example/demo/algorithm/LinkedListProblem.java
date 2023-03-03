@@ -2,7 +2,7 @@ package com.example.demo.algorithm;
 
 /**
  * @author xurui
- * @description TODO
+ * @description 链表相关题目
  * @date 2023/2/14 16:46
  */
 public class LinkedListProblem {
